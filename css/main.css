@@ -24,9 +24,9 @@ html{
 /********************************LOGO********************************************************/
 
 .logo {
-   /* width: 15%;
+    width: 15%;
     float:left;
-    margin-right: 1rem;*/
+    margin-right: 1rem;
 }
 
 
@@ -38,7 +38,7 @@ html{
 .head{
     padding: 0rem;
     width: 100%;
-    /*display: flex;*/
+    display: flex;
     background-size:  auto;
     background-position: center center;
 } 
@@ -61,8 +61,8 @@ img {
 /*************************************************MAIN ELEMENTS WRAPPING*******************************/
 .container {
     width: 100%;
-       /* display: flex;
-        align-items:baseline;*/
+        display: flex;
+        align-items:baseline;
         text-align: left;
         
     }
@@ -113,13 +113,13 @@ font-size: 0.8rem;
  /*********************************************FOOTER********************************************/
 footer {
 
-    /*display: flex;*/
+    display: flex;
     background-color:#FFFD8C;
     color: #333131;
     padding: 10px;
     justify-items: right;
     font-size: 0.5rem;
-    /*flex-direction: row;*/
+    flex-direction: row;
     
   }
 
@@ -144,9 +144,8 @@ footer {
 /*********************************************Tablet********************************************/
 
 
- 
+  /*
   @media screen and (min-width: 700px) {
-      /*
     .grid {
         width: 700px;
         display: grid;
@@ -161,45 +160,14 @@ footer {
     .logo{ grid-area: logo;}
     .container{ grid-area: container;}
     footer { grid-area: footer;}
-    
+  }
+  
 */
-        /*display: flex;*/
-        footer {
-        background-color:#FFFD8C;
-        color: #333131;
-        width:100%;
-        padding: 20px;
-        justify-items: right;
-        font-size: 0.5rem;
-        /*flex-direction: row;*/
-        
-      }
-
-      im{
-        flex-direction: row;
-    }
-    
-    
-    button {
-        background-color: #FF8480;
-        color:#F7F7FF;
-        font-size: 2rem;
-        border-radius: 6px;
-        border: none;
-    }
-  .form{
-      font-size: 0.6rem;
-      justify-self: left;
-  }
-  
-  }
-  
-
 
 
 
 /*********************************************Mobile********************************************/
-
+  /*
 @media screen and (min-width: 900px) {
     .grid {
         width: 700px;
@@ -216,4 +184,4 @@ footer {
     .container{ grid-area: container;}
     footer { grid-area: footer;}
   }
- 
+  
