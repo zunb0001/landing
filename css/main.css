@@ -1,0 +1,185 @@
+/***********************************FONTS***************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+/*****************************************************************************************/
+
+
+html{
+    background-color: #F5F5FD;
+    font-family: 'Montserrat', sans-serif;
+    cursor: #333131;
+}
+
+/*********************************GRID********************************************************/
+.grid {
+    width:90%;
+    margin: 0 auto;
+  
+
+}
+
+
+
+/********************************LOGO********************************************************/
+
+.logo {
+    width: 15%;
+    float:left;
+    margin-right: 1rem;
+}
+
+
+
+
+
+
+/****************************************THE LARGE IMAGE & HEADER*************************************************/
+.head{
+    padding: 0rem;
+    width: 100%;
+    display: flex;
+    background-size:  auto;
+    background-position: center center;
+} 
+p{
+    font-size: 1rem;
+    width: 100%;
+    line-height: 1.4;
+}
+
+
+
+img {
+   padding: 20px;
+   margin: auto;
+   width: 50%;
+
+}
+
+
+/*************************************************MAIN ELEMENTS WRAPPING*******************************/
+.container {
+    width: 100%;
+        display: flex;
+        align-items:baseline;
+        text-align: left;
+        
+    }
+
+
+/*********************************INPUT FORM********************************************************/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 2px;
+    margin-bottom: 2px;
+    background-color: #F7F7FF;;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  p.apply{
+font-size: 0.8rem;
+  }
+  a.ans{
+     color: #FF8480;
+     font-size: 0.8rem;
+     
+  }
+  input[type=submit] {
+    width: 100%;
+    background-color: #57EEAB;
+    color: #333131;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  
+  
+ .box {
+     width: 100%;
+    border-radius: 5px;
+  background-color: white;
+    padding: 10px;
+    box-shadow: 1px 2px  #555353;
+  }
+
+ /*********************************************FOOTER********************************************/
+footer {
+
+    display: flex;
+    background-color:#FFFD8C;
+    color: #333131;
+    padding: 10px;
+    justify-items: right;
+    font-size: 0.5rem;
+    flex-direction: row;
+    
+  }
+
+  .im{
+      flex-direction: row;
+  }
+  
+  
+  button {
+      background-color: #FF8480;
+      color:#F7F7FF;
+      font-size: 2rem;
+      border-radius: 6px;
+      border: none;
+  }
+.form{
+    font-size: 0.6rem;
+    justify-self: left;
+}
+
+
+/*********************************************Tablet********************************************/
+
+
+  
+  @media screen and (min-width: 700px) {
+    .grid {
+        width: 700px;
+        display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas:
+      "logo logo logo"
+      "container container container"
+      "footer   footer       footer";
+    }
+    .logo{ grid-area: logo;}
+    .container{ grid-area: container;}
+    footer { grid-area: footer;}
+  }
+  
+
+
+
+
+/*********************************************Mobile********************************************/
+  @media screen and (min-width: 900px) {
+    .grid {
+        width: 700px;
+        display: grid;
+
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-areas:
+      "logo logo logo"
+      "container container container"
+      "footer   footer       footer";
+    }
+    .logo{ grid-area: logo;}
+    .container{ grid-area: container;}
+    footer { grid-area: footer;}
+  }
